@@ -20,9 +20,12 @@ export default function Navigation() {
       screenOptions={{ headerShown: false }} //quita el header de la navegacion
       tabBarOptions={{
         activeTintColor: "#000",
-        activeBackgroundColor: "#fccf00",
-        inactiveTintColor: "#FFF",
-        inactiveBackgroundColor: "#2468b1",
+        // activeBackgroundColor: "#fccf00",
+        // inactiveTintColor: "#FFF",
+        // inactiveBackgroundColor: "#2468b1",
+        activeBackgroundColor: "#E8E8E8",
+        inactiveTintColor: "grey",
+        inactiveBackgroundColor: "white",
         tabStyle: {
           //   padding: 5,
           paddingBottom: 5, //Padding 0 here
