@@ -1,11 +1,13 @@
 import React from "react";
-import { Text } from "react-native";
+import { View, Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context"; // importamos de aca, porque el SafeArea del paquete de react native no funciona
 
+import LoginForm from "../components/Auth/LoginForm";
+import UserData from "../components/Auth/UserData";
+import useAuth from "../hooks/useAuth";
+
 export default function Account() {
-  return (
-    <SafeAreaView>
-      <Text>Account</Text>
-    </SafeAreaView>
-  );
+  const { auth } = useAuth();
+
+  return <View>{auth ? <UserData /> : <LoginForm />}</View>;
 }

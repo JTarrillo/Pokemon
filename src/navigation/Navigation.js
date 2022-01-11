@@ -24,6 +24,7 @@ export default function Navigation() {
         // inactiveTintColor: "#FFF",
         // inactiveBackgroundColor: "#2468b1",
         activeBackgroundColor: "#E8E8E8",
+        activeTintColor: "#2196f3",
         inactiveTintColor: "grey",
         inactiveBackgroundColor: "white",
         tabStyle: {
