@@ -7,3 +7,12 @@ npm install lodash
 npm install formik
 npm install yup
 npm install @react-native-async-storage/async-storage
+
+<!-- Generar el Apk -->
+
+expo build:android -t apk
+"sdkVersion": "36.0.0",
+
+<!-- GnERAR ABB -->
+
+expo build:android -t app-bundle

@@ -36,7 +36,7 @@ export default function UserData() {
         <ItemMenu title="Total Favoritos" text={`${total} pokemons`} />
       </View>
 
-      <Button title="Desconectarse" onPress={logout} style={styles.btnLogoun} />
+      <Button title="Desconectarse" onPress={logout} style={styles.btnLogout} />
     </View>
   );
 }
@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
     paddingRight: 10,
     width: 120,
   },
-  btnLogoun: {
+  btnLogout: {
     paddingTop: 20,
   },
 });

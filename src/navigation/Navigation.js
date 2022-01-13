@@ -16,7 +16,7 @@ const Tab = createBottomTabNavigator();
 export default function Navigation() {
   return (
     <Tab.Navigator
-      initialRouteName="Favorite"
+      initialRouteName="Pokedex"
       screenOptions={{ headerShown: false }} //quita el header de la navegacion
       tabBarOptions={{
         activeTintColor: "#000",
