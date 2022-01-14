@@ -17,7 +17,7 @@ export default function FavoriteNavigation() {
         component={FavoriteScreen}
         // options={{ title: "Favoritos" }}
         options={{
-          title: "Pokedex",
+          title: "Favoritos",
           headerStyle: {
             backgroundColor: "#6b57ff",
           },
