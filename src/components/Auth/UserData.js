@@ -26,7 +26,9 @@ export default function UserData() {
     <View style={styles.content}>
       <View style={styles.titleBlock}>
         <Text style={styles.title}>Bienvenido,</Text>
-        <Text style={styles.title}>{`${auth.firstName} ${auth.lastName}`}</Text>
+        <Text
+          style={styles.title}
+        >{`${auth.firstName}  ${auth.lastName}`}</Text>
       </View>
 
       <View style={styles.dataContent}>
@@ -36,7 +38,12 @@ export default function UserData() {
         <ItemMenu title="Total Favoritos" text={`${total} pokemons`} />
       </View>
 
-      <Button title="Desconectarse" onPress={logout} style={styles.btnLogout} />
+      <Button
+        title="Desconectarse"
+        color="#6b57ff"
+        onPress={logout}
+        style={styles.btnLogout}
+      />
     </View>
   );
 }

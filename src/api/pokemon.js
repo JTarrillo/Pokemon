@@ -11,6 +11,17 @@ export async function getPokemonsApi(endpointUrl) {
   }
 }
 
+export async function getPokemonsApiTotal() {
+  try {
+    const url = `${API_HOST}/pokemon?limit=1118`;
+    const response = await fetch(url);
+    const result = await response.json();
+    return result;
+  } catch (error) {
+    throw error;
+  }
+}
+
 export async function getPokemonDetailsByUrlApi(url) {
   try {
     const response = await fetch(url);

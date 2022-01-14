@@ -55,7 +55,7 @@ export default function LoginForm() {
         <View style={styles.buttonLogin}>
           <Button
             title="Entrar"
-            color={"#2196f3"}
+            color={"#6b57ff"}
             onPress={formik.handleSubmit}
           />
         </View>

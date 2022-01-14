@@ -1,17 +1,27 @@
 import React from "react";
-import { StyleSheet, View, SafeAreaView, Text, Image } from "react-native";
+import {
+  StyleSheet,
+  View,
+  SafeAreaView,
+  Text,
+  Image,
+  StatusBar,
+} from "react-native";
 import { capitalize } from "lodash";
 import getColorByPokemonType from "../../utils/getColorByPokemonType";
 
 export default function Header(props) {
   const { name, order, image, type } = props;
   const color = getColorByPokemonType(type);
-
   const bgStyle = [{ backgroundColor: color, ...styles.bg }];
-
   return (
     <>
       <View style={bgStyle} />
+      <StatusBar
+        animated={true}
+        backgroundColor={color}
+        barStyle="light-content"
+      />
 
       <SafeAreaView style={styles.content}>
         <View style={styles.header}>

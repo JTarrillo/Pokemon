@@ -8,24 +8,29 @@ const Stack = createNativeStackNavigator();
 export default function PokedexNavigation() {
   return (
     <Stack.Navigator
-      screenOptions={{ headerTitleAlign: "center", headerShadowVisible: false }}
+      screenOptions={{
+        headerTitleAlign: "center",
+        headerShadowVisible: false,
+      }}
     >
       <Stack.Screen
         name="Pokedex"
         component={PokedexScreen}
         // options={{ title: "Pokedex" }}
-        options={{ title: "", headerTransparent: true }}
-        // options={{
-        //   title: "hola",
-        //   headerStyle: {
-        //     backgroundColor: "#f4511e",
-        //   },
 
-        //   headerTitleStyle: {
-        //     fontWeight: "bold",
-        //     color: "#fff",
-        //   },
-        // }}
+        // options={{ title: "", headerTransparent: true }} // headerShown: false, si quiero ocultar el header
+
+        options={{
+          title: "Pokedex",
+          headerStyle: {
+            backgroundColor: "#6b57ff",
+          },
+
+          headerTitleStyle: {
+            fontWeight: "bold",
+            color: "#fff",
+          },
+        }}
       />
       <Stack.Screen
         name="Pokemon"

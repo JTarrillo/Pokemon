@@ -15,7 +15,18 @@ export default function FavoriteNavigation() {
       <Stack.Screen
         name="Favorite"
         component={FavoriteScreen}
-        options={{ title: "Favoritos" }}
+        // options={{ title: "Favoritos" }}
+        options={{
+          title: "Pokedex",
+          headerStyle: {
+            backgroundColor: "#6b57ff",
+          },
+
+          headerTitleStyle: {
+            fontWeight: "bold",
+            color: "#fff",
+          },
+        }}
       />
       <Stack.Screen
         name="Pokemon"

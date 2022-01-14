@@ -7,5 +7,5 @@ export const userDetails = {
   username: "jvicunav",
   firstName: "Jorge",
   lastName: "Vicuna Valle",
-  email: "jvicunav@gmail.com",
+  email: "jorge150896@hotmail.com",
 };

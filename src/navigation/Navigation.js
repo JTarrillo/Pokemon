@@ -1,7 +1,7 @@
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
-import { Image } from "react-native";
+import { Image, StatusBar } from "react-native";
 import Icon from "react-native-vector-icons/FontAwesome5";
 
 import FavoriteNavigation from "./FavoriteNavigation";
@@ -24,7 +24,7 @@ export default function Navigation() {
         // inactiveTintColor: "#FFF",
         // inactiveBackgroundColor: "#2468b1",
         activeBackgroundColor: "#E8E8E8",
-        activeTintColor: "#2196f3",
+        activeTintColor: "#6b57ff", //"#2196f3",
         inactiveTintColor: "grey",
         inactiveBackgroundColor: "white",
         tabStyle: {
@@ -41,7 +41,7 @@ export default function Navigation() {
         name="Favorite"
         component={FavoriteNavigation}
         options={{
-          tabBarLabel: "Favoritos",
+          tabBarLabel: "Favorites ",
           tabBarIcon: ({ color, size }) => (
             <Icon name="heart" color={color} size={size} />
           ),
@@ -61,7 +61,7 @@ export default function Navigation() {
         name="Account"
         component={AccountNavigation}
         options={{
-          tabBarLabel: "Mi cuenta",
+          tabBarLabel: "Account",
           tabBarIcon: ({ color, size }) => (
             <Icon name="user" color={color} size={size} />
           ),

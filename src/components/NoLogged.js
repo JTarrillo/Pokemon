@@ -12,6 +12,7 @@ export default function NoLogged() {
       </Text>
       <Button
         title="Ir al login"
+        color={"#6b57ff"}
         onPress={() => navigation.navigate("Account")}
       />
     </View>
